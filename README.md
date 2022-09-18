@@ -1,6 +1,5 @@
-# Hyva
-
-### Module that adds additional functionality for user in terms of additional fields for user content
+### Custom widgets
+## Module that adds additional functionality for user in terms of additional fields for user content
 
 ## Current Widgets are all for Homepage content
 - Badge Widget
@@ -10,5 +9,4 @@
 - ThreeStepsToDesign
 - Admin field for Image upload
 - Admin field Textarea
-# Pixel_Widget
-# Pixel_Widget
+
