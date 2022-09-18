@@ -1,0 +1,55 @@
+<?php
+
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+
+<div class="relative min-h-[443px]">
+
+    <div class="bg-image-wrapper absolute ">
+        <img  class="" src="<?= $escaper->escapeHtml($block->getData('background')) ?>" alt="Smith & warren"/>
+    </div>
+    <div class="relative flex">
+        <div class="relative text-container max-w-sm pt-14">
+            <h2
+                class="text-blue-dark mb-8 text-3xl font-extrabold uppercase  mb-2"
+            >
+            <?= $escaper->escapeHtml($block->getData('title')) ?>
+            </h2>
+            
+            <div class="mt-9 img-wrapper max-w-[160px]">
+                <picture class="h-full object-cover">
+                    <img
+                        class="-mt-6 h-full w-full object-cover"
+                        src="<?= $escaper->escapeHtml($block->getData('brand')) ?>"
+                        alt="Smith & warren"
+                    />
+                </picture>
+                <?php if($escaper->escapeHtml($block->getData('option')) == "on" ) : ?>
+                <hr
+                    class="bg-golden-light my-5 mt-7 mb-4 h-[3px] border-0"
+                />
+                <?php endif; ?>
+            </div>
+
+            <p class="text-blue-dark mb-4 max-w-[200px] text-sm">
+            <?= $escaper->escapeHtml($block->getData('short')) ?>
+            </p>
+            <a href="<?= $escaper->escapeHtml($block->getData('ctalink')) ?>" class="btn btn-primary btn-medium"><?= $escaper->escapeHtml($block->getData('ctatitle')) ?></a>
+        </div>
+        <div class="absolute right-0  img-container mt-28 md:-mt-7 max-w-[50%] md:max-w-[50%] xl:max-w-none  md:top-2/4 xl:top-2.5 xl:-right-12 ">
+            <picture class="h-full object-cover">
+                <img
+                    class=" h-full w-full object-cover"
+                    src="<?= $escaper->escapeHtml($block->getData('badge')) ?>"
+                    alt="Smith & warren"
+                />
+            </picture>
+        </div>
+    </div>
+</div>

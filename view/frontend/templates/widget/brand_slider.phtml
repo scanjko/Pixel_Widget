@@ -1,0 +1,92 @@
+<?php
+
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+
+<section class="hp-brands-block">
+    <div class="container my-20 flex gap-5 md:gap-4 xl:gap-24 items-center justify-center ">
+
+        <div class="glider-brand-block">
+        <?php if ($img1 = $escaper->escapeHtml($block->getData('img1'))): ?>
+                <div class="item flex">
+                    <img src="<?=$img1 ?>" alt="" width="260" height="80">
+                </div>
+        <?php endif ?>
+
+        <?php if ($img2 = $escaper->escapeHtml($block->getData('img2'))): ?>
+            <div class="item flex">
+                <img src="<?= $img2 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+
+        <?php if ($img3 = $escaper->escapeHtml($block->getData('img3'))): ?>
+            <div class="item flex">
+                <img src="<?= $img3 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+
+        <?php if ($img4 = $escaper->escapeHtml($block->getData('img4'))): ?>
+            <div class="item flex">
+                <img src="<?= $img4 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+
+        <?php if ($img5 = $escaper->escapeHtml($block->getData('img5'))): ?>
+            <div class="item flex">
+                <img src="<?= $img5 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+
+        <?php if ($img6 = $escaper->escapeHtml($block->getData('img6'))): ?>
+            <div class="item flex">
+                <img src="<?= $img6 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+
+        <?php if ($img7 = $escaper->escapeHtml($block->getData('img7'))): ?>
+            <div class="item flex">
+                <img src="<?= $img7 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+
+        <?php if ($img8 = $escaper->escapeHtml($block->getData('img8'))): ?>
+            <div class="item flex">
+                <img src="<?= $img8 ?>" alt="" width="260" height="80">
+            </div>
+        <?php endif ?>
+           
+        </div>
+
+    </div>
+
+</section>
+
+<script defer>
+
+    window.addEventListener('load', () => {
+        var slider = new Glider(document.querySelector('.glider-brand-block'), {
+            // Mobile-first defaults
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            scrollLock: true,
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                    slidesToShow: '4',
+                    slidesToScroll: '1',
+                    itemWidth: 150,
+                    duration: 0.25
+                    }
+                }
+            ]
+        });
+        });
+</script>

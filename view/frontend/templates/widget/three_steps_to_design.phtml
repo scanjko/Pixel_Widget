@@ -1,0 +1,40 @@
+<?php
+
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+
+<section class="hp-three-steps">
+    <div class="container py-10 px-10 flex flex-col items-center gap-10 lg:gap-16 lg:py-16">
+        <div class="flex flex-col gap-4 items-center md:gap-5 lg:gap-6">
+            <h3 class="text-white font-heading font-bold text-2xl uppercase text-center md:text-3xl xl:text-4xl"><?= $escaper->escapeHtml($block->getData('title')) ?></h3>
+            <span class="w-[200px] h-[3px] bg-golden-light"></span>
+        </div>        
+        <div class="max-w-[820px] grid justify-items-center text-center lg:text-left gap-y-5 lg:gap-y-7 lg:gap-x-1 lg:items-center">
+            <img class="lg:col-start-2 lg:row-start-1 lg:ml-[22px]" width="131" height="125" src="<?= $escaper->escapeHtmlAttr($block->getViewFileUrl('images/homepage/three-steps-design.svg')) ?>" alt="<?= $escaper->escapeHtml(__('First Step to Design')) ?>">
+            <div class="lg:col-start-1 lg:row-start-1">
+                <h4 class="text-golden-light uppercase font-extrabold text-2xl mb-2">1. <?= $escaper->escapeHtml($block->getData('first_step_title')) ?></h4>
+                <p class="text-white text-sm"><?= $escaper->escapeHtml($block->getData('first_step_description')) ?></p>
+            </div>            
+            <i class="lg:col-start-2 lg:row-start-2 fa-solid fa-arrow-down text-white/50 text-2xl"></i>
+            <img class="lg:col-start-2 lg:row-start-3" width="124" height="113" src="<?= $escaper->escapeHtmlAttr($block->getViewFileUrl('images/homepage/three-steps-eye.svg')) ?>" alt="<?= $escaper->escapeHtml(__('Second Step to Design')) ?>">
+            <div class="lg:col-start-3 lg:row-start-3">
+                <h4 class="text-golden-light uppercase font-extrabold text-2xl mb-2">2. <?= $escaper->escapeHtml($block->getData('second_step_title')) ?></h4>
+                <p class="text-white text-sm"><?= $escaper->escapeHtml($block->getData('second_step_description')) ?></p>
+            </div>            
+            <i class="lg:col-start-2 lg:row-start-4 fa-solid fa-arrow-down text-white/50 text-2xl"></i>
+            <img class="lg:col-start-2 lg:row-start-5 lg:ml-[22px]" width="139" height="123" src="<?= $escaper->escapeHtmlAttr($block->getViewFileUrl('images/homepage/three-steps-buy.svg')) ?>" alt="<?= $escaper->escapeHtml(__('Third Step to Design')) ?>">
+            <div class="lg:col-start-1 lg:row-start-5">
+                <h4 class="text-golden-light uppercase font-extrabold text-2xl mb-2">3. <?= $escaper->escapeHtml($block->getData('third_step_title')) ?></h4>
+                <p class="text-white text-sm"><?= $escaper->escapeHtml($block->getData('third_step_description')) ?></p>
+            </div>            
+        </div>
+        <a href="<?= $escaper->escapeHtml($block->getData('cta_link')) ?>" class="btn btn-outlined btn-outlined--dark-bg btn-large"><?= $escaper->escapeHtml($block->getData('cta')) ?></a>
+    </div>    
+</section>
+    

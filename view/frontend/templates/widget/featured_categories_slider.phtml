@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+
+<div class="item flex flex-col items-center mx-5 my-0 xl:mx-5">
+    <img class="z-10" src="<?= $escaper->escapeHtml($block->getData('image')) ?>" alt="<?= $escaper->escapeHtml($block->getData('title')) ?>" width="258" height="226">                
+    <div class="hp-featured-categories__item-desc bg-white flex flex-col items-center px-3 lg:px-4 text-sm text-center -mt-24 pt-24 shadow-xl">
+        <h3 class="font-sans font-extrabold text-lg text-blue-dark uppercase mb-2"><?= $escaper->escapeHtml($block->getData('title')) ?></h3>
+        <img class="mb-8" src="<?= $escaper->escapeHtml($block->getData('brand_image')) ?>" alt="<?= $escaper->escapeHtml($block->getData('brand_name')) ?>" width="216" height="35">
+        <p class="text-blue-dark mb-8"><?= $escaper->escapeHtml($block->getData('description')) ?></p>
+        <a class="btn btn-outlined btn-small mb-8" href="<?= $escaper->escapeHtml($block->getData('button_link')) ?>"><?= $escaper->escapeHtml($block->getData('button_text')) ?></a>                    
+    </div>
+</div> 

@@ -1,0 +1,236 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Pixel\Widget\Block\Adminhtml\Widget\BrandSlider" id="slider_brand">
+        <label>Hyva - Brand slider</label>
+        <description>Upload images to slider block</description>
+        <parameters>
+            <parameter name="img1" xsi:type="block" visible="true" sort_order="10">
+                <label>Brand image 1</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img2" xsi:type="block" visible="true" sort_order="15">
+                <label>Brand image 2</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img3" xsi:type="block" visible="true" sort_order="20">
+                <label>Brand image 3</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img4" xsi:type="block" visible="true" sort_order="25">
+                <label>Brand image 4</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img5" xsi:type="block" visible="true" sort_order="30">
+                <label>Brand image 5</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img6" xsi:type="block" visible="true" sort_order="35">
+                <label>Brand image 6</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img7" xsi:type="block" visible="true" sort_order="40">
+                <label>Brand image 7</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="img8" xsi:type="block" visible="true" sort_order="40">
+                <label>Brand image 8</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget class="Pixel\Widget\Block\Adminhtml\Widget\BadgeWidget" id="badge_widget">
+        <label>Hyva - Badge Widget</label>
+        <description>Single Badge widget</description>
+
+        <parameters>
+            <parameter name="background" xsi:type="block" visible="true" sort_order="5">
+            <label>Block background image</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="title" xsi:type="text" visible="true" sort_order="10">
+                <label>H2 title</label>
+            </parameter>
+
+             <parameter name="brand" xsi:type="block" visible="true" sort_order="12">
+                <label>Brand logo</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="option" xsi:type="select" visible="true" sort_order="15">
+                <label>HR line separator (Yes/No)</label>
+                <options>
+                    <option name="on" value="on" selected="true">
+                        <label>On</label>
+                    </option>
+                    <option name="off" value="off">
+                        <label>Off</label>
+                    </option>
+                </options>
+            </parameter>
+
+            <parameter name="short" xsi:type="block" visible="true" sort_order="30">
+                <label>Short Description</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\TextAreaField"/>
+            </parameter>
+
+            <parameter name="ctatitle" xsi:type="text" visible="true" sort_order="35">
+                <label>CTA link title</label>
+            </parameter>
+
+            <parameter name="ctalink" xsi:type="text" visible="true" sort_order="40">
+                <label>CTA link</label>
+            </parameter>
+
+            <parameter name="badge" xsi:type="block" visible="true" sort_order="45">
+                <label>Badge image</label>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget class="Pixel\Widget\Block\Adminhtml\Widget\ThreeStepsToDesign" id="design_steps">
+        <label>Hyva - Three steps to get your design</label>
+        <description>Change section title, step title and step description</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Section Title</label>
+            </parameter>
+            <parameter name="first_step_title" xsi:type="text" required="true" visible="true" sort_order="15">
+                <label>First Step Title</label>
+            </parameter>
+            <parameter name="first_step_description" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>First Step Description</label>
+            </parameter>
+            <parameter name="second_step_title" xsi:type="text" required="true" visible="true" sort_order="25">
+                <label>Second Step Title</label>
+            </parameter>
+            <parameter name="second_step_description" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label>Second Step Description</label>
+            </parameter>
+            <parameter name="thrid_step_title" xsi:type="text" required="true" visible="true" sort_order="35">
+                <label>Second Step Title</label>
+            </parameter>
+            <parameter name="third_step_description" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>Third Step Description</label>
+            </parameter>
+            <parameter name="cta" xsi:type="text" required="true" visible="true" sort_order="45">
+                <label>CTA button text</label>
+            </parameter>
+            <parameter name="cta_link" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>CTA button link</label>
+            </parameter>
+        </parameters>
+    </widget>
+
+    <widget class="Pixel\Widget\Block\Adminhtml\Widget\FeaturedCategoriesSlider" id="featured_categories_slider">
+        <label>Hyva - Featured Categories Slider</label>
+        <description>Add slider item. Add Image / Title / Brand Name / Brand Image / Description / CTA button</description>
+        <parameters>
+            <parameter name="image" xsi:type="block" required="true" visible="true" sort_order="10">
+                <label>Image</label>
+                <description translate="true">Image size should be: 258px (width) / 226px (height)</description>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="title" xsi:type="text" required="true" visible="true" sort_order="15">
+                <label>Title</label>
+            </parameter>
+            <parameter name="brand_name" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Brand Name</label>
+            </parameter>
+            <parameter name="brand_image" xsi:type="block" required="true" visible="true" sort_order="25">
+                <label>Brand Image</label>
+                <description translate="true">Image size should be: 216px (width) / 35px (height)</description>
+                <block class="Pixel\Widget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="description" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label>Description</label>
+            </parameter>
+            <parameter name="button_text" xsi:type="text" required="true" visible="true" sort_order="35">
+                <label>Button text</label>
+            </parameter>
+            <parameter name="button_link" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>Button link</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
